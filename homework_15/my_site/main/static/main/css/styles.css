@@ -1,0 +1,28 @@
+html {
+    font-family: 'Arial';
+}
+
+body {
+    font-size: 20px;
+    font-weight: 400;
+    color: #000;
+    background-color: light-grey;
+    min-width: 320px;
+
+}
+
+h1{
+    font-size: 28px;
+    color: #f24e5e;
+    padding: 10px 0;
+}
+
+/* begin footer */
+footer {
+    display: flex;
+    background: #6D6E71;
+    color: #fff;
+    justify-content: center;
+    height: 50px;
+}
+/* end footer */

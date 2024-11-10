@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ title }}
+{% endblock title %}
+
+{% block content %}
+<h1>{{ title|upper }}</h1>
+<div>
+    <ul>
+        {% for service in services_list %}
+            <li>
+                <h5>{{ service }}</h5>
+            </li>
+        {% endfor %}
+    </ul>
+    <p>Загальна кількість послуг: {{ services_list|length}}</p>
+</div>
+<div>
+    <ul>Перші три послуги ВРЦОЯО:
+        {% for service in services_list|slice:"3" %}
+            <li>
+                {{ service }}
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock content %}

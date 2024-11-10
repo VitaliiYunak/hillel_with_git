@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ title}}
+{% endblock title %}
+
+{% block content %}
+<h1>{{ title|upper }}</h1>
+<p>{{ html_content|safe }}</p>
+<div>
+    <p> {{ description_company }}</p>
+</div>
+<div>
+    <p>{{ company_name|truncatechars:30 }}</p>
+    <p>Дата останнього оновлення сторінки: {{ last_updated|date:"d.m.Y.H:i" }}</p>
+</div>
+{% endblock content %}
+
+{% block footer %}
+{% endblock footer %}
